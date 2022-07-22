@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-color: hsl(30, 38%, 92%);
+  padding: 30px 15px;
+  width: 350px;
+  height: auto;
+}
+
+section div:first-child {
+  background-color: white;
+  border-radius: 10px;
+}
+#image {
+  background-image: url(./images/image-product-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: auto;
+  height: 250px;
+}
+
+.info {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.small-title {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: hsl(212, 21%, 14%);
+  margin: 0px;
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+  font-size: 15px;
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.price1 {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  margin-right: 20px;
+  font-size: 35px;
+}
+.price2 {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  gap: 10px;
+  border-radius: 10px;
+  border: 0;
+}
+
+button:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+@media only screen and (min-width: 375px) {
+  html {
+    background-color: hsl(30, 38%, 92%);
+  }
+  section {
+    background-color: hsl(30, 38%, 92%);
+    padding: 30px 15px;
+    width: 600px;
+    height: auto;
+  }
+
+  section div:first-child {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+  }
+  #image {
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: auto;
+  }
+
+  .info {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 350px;
+  }
+}
